@@ -12,6 +12,19 @@
     "test:unit": "vue-cli-service test:unit --passWithNoTests",
     "lint": "vue-cli-service lint --fix"
   },
+  "keywords": [
+    "vue",
+    "bootstrap",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desionlab/vue-vcl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/desionlab/vue-vcl/issues"
+  },
+  "homepage": "https://desionlab.github.io/vue-vcl/",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
