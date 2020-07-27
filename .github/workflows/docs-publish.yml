@@ -11,11 +11,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Build and Deploy
-        uses: grasilife/github-pages-deploy-action@master
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_BRANCH: master
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
-          BUILD_SCRIPT: npm ci && npm run docs:build
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: desionlab/vue-vcl
+          TARGET_BRANCH: gh-pages
+          BUILD_SCRIPT: npm i && npm run docs:build
+          BUILD_DIR: docs/.vuepress/dist/
