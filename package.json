@@ -2,7 +2,7 @@
   "name": "@desionlab/vue-vcl",
   "version": "0.0.1",
   "description": "Visual component library for \"Vue.js\" based on \"Bootstrap\" css framework.",
-  "author": "Desionlab <support@desionlab.net> (http://desionlab.net/)",
+  "author": "Desionlab <fenixphp@gmail.com>",
   "license": "MIT",
   "main": "./src/index.js",
   "scripts": {
