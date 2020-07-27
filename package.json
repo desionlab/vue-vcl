@@ -1,0 +1,51 @@
+{
+  "name": "@desionlab/vue-vcl",
+  "version": "0.0.1",
+  "description": "Visual component library for \"Vue.js\" based on \"Bootstrap\" css framework.",
+  "author": "Desionlab <support@desionlab.net> (http://desionlab.net/)",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name vue-vcl src/index.js",
+    "docs:build": "vuepress build docs",
+    "docs:develop": "vuepress dev docs",
+    "test:unit": "vue-cli-service test:unit --passWithNoTests",
+    "lint": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "core-js": "^3.6.5",
+    "lodash": "^4.17.19",
+    "uuid": "^8.2.0",
+    "vee-validate": "^3.3.7",
+    "vue": "^2.6.11",
+    "vue-clickaway": "^2.2.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-plugin-unit-jest": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
