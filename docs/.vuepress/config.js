@@ -7,6 +7,7 @@
  */
 
 module.exports = {
+  base: '/vue-vcl/',
   locales: {
     '/': {
       lang: 'en-US',
