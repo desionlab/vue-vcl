@@ -21,19 +21,36 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'border'
-    },
-    label: {
-      type: String,
-      default: null
+      default: 'border',
+      validator(value) {
+        return ['border', 'grow'].indexOf(value) !== -1;
+      }
     },
     variant: {
       type: String,
-      default: 'primary'
+      default: 'primary',
+      validator(value) {
+        return (
+          [
+            'primary',
+            'secondary',
+            'success',
+            'danger',
+            'warning',
+            'info',
+            'light',
+            'dark'
+          ].indexOf(value) !== -1
+        );
+      }
     },
     small: {
       type: Boolean,
       default: false
+    },
+    label: {
+      type: String,
+      default: null
     }
   },
   computed: {
