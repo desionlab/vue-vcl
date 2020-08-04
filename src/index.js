@@ -20,6 +20,7 @@ import VclEdit from './components/edit/edit.component.vue';
 import { DialogService } from './components/dialog/dialog.service';
 import DialogMixin from './components/dialog/dialog.mixin';
 import VclDialogsPolite from './components/dialog/dialogs-polite.component.vue';
+import VclDialogWrapper from './components/dialog/dialog-wrapper.component.vue';
 
 /* Helpers mixin list. */
 export { ToastMixin, EditMixin, DialogMixin };
@@ -63,6 +64,7 @@ const Vcl = {
       context.prototype.$eventBus
     );
     context.component(VclDialogsPolite.name, VclDialogsPolite);
+    context.component(VclDialogWrapper.name, VclDialogWrapper);
   }
 };
 

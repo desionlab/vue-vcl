@@ -1,9 +1,11 @@
 # Spinner <Badge text="beta" type="warning"/>
+
 Indicate the loading state of a component or page.
 
 ## Type
 
 ### Border
+
 <ClientOnly>
   <div class="vcl-example">
     <VclSpinner type="border" class="mr-3" />
@@ -20,6 +22,7 @@ Indicate the loading state of a component or page.
 ```
 
 ### Grow
+
 <ClientOnly>
   <div class="vcl-example">
     <VclSpinner type="grow" class="mr-3" />
@@ -36,6 +39,7 @@ Indicate the loading state of a component or page.
 ```
 
 ## Color
+
 <ClientOnly>
   <div class="vcl-example">
     <VclSpinner type="border" class="mr-3" variant="primary" />
@@ -65,6 +69,7 @@ Indicate the loading state of a component or page.
 ```
 
 ## Size
+
 <ClientOnly>
   <div class="vcl-example">
     <VclSpinner type="border" class="mr-3" />

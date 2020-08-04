@@ -10,14 +10,22 @@ import componentMixin from '../component.mixin';
 
 export default {
   mixins: [componentMixin],
-  props: {},
-  data() {
-    return {};
+  props: {
+    context: {
+      type: Object,
+      default() {
+        return {};
+      }
+    }
   },
   methods: {
     /*  */
-    onClose() {
-      this.$emit('close', this.id);
+    close(data = {}) {
+      this.$emit('close', data);
+    },
+    /*  */
+    backdrop() {
+      this.$emit('backdrop');
     }
   }
 };

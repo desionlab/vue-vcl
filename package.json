@@ -1,6 +1,6 @@
 {
   "name": "@desionlab/vue-vcl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Visual component library for \"Vue.js\" based on \"Bootstrap\" css framework.",
   "author": "Desionlab <fenixphp@gmail.com>",
   "license": "MIT",

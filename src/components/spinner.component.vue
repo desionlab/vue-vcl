@@ -54,7 +54,6 @@ export default {
     }
   },
   computed: {
-    /* Generates a list of css classes. */
     computedClasses() {
       const classes = [];
 
