@@ -17,9 +17,5 @@ export default {
         return uuid();
       }
     }
-  },
-  data() {
-    return {};
-  },
-  methods: {}
+  }
 };

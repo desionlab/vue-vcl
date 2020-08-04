@@ -55,6 +55,10 @@ module.exports = {
                 path: '/components/edit'
               },
               {
+                title: 'Spinner',
+                path: '/components/spinner'
+              },
+              {
                 title: 'Toasts',
                 path: '/components/toasts'
               }
