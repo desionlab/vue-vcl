@@ -9,21 +9,23 @@
 import Vue from 'vue';
 import { cloneDeep, merge } from 'lodash';
 import Spinner from './components/spinner.component.vue';
-/* Toast */
-import { ToastService } from './components/toast/toast.service';
-import ToastMixin from './components/toast/toast.mixin';
-import VclToastsPolite from './components/toast/toasts-polite.component.vue';
-/* Edit */
-import EditMixin from './components/edit/edit.mixin';
-import VclEdit from './components/edit/edit.component.vue';
 /* Dialog */
 import { DialogService } from './components/dialog/dialog.service';
 import DialogMixin from './components/dialog/dialog.mixin';
 import VclDialogsPolite from './components/dialog/dialogs-polite.component.vue';
 import VclDialogWrapper from './components/dialog/dialog-wrapper.component.vue';
+/* Edit */
+import EditMixin from './components/edit/edit.mixin';
+import VclEdit from './components/edit/edit.component.vue';
+/* Tabs */
+import TabControlMixin from './components/tabs/tab-control.mixin';
+/* Toast */
+import { ToastService } from './components/toast/toast.service';
+import ToastMixin from './components/toast/toast.mixin';
+import VclToastsPolite from './components/toast/toasts-polite.component.vue';
 
 /* Helpers mixin list. */
-export { ToastMixin, EditMixin, DialogMixin };
+export { DialogMixin, EditMixin, TabControlMixin, ToastMixin };
 
 /* Default plugin options. */
 export const VclDefaultOptions = {};
